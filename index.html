@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Intuitive Notepad</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+</head>
+    <style>
+    .hidden{
+        display:none;
+    }
+    
+    .unhidden{
+        display:block;
+
+    }
+    </style>
+<body style="background-color: #fbedea;">
+    
+    User ID: <input type="text" id="USERID" size="8">
+    <button onclick="javascript: window.open('https://whois.icann.org/en/lookup?name=' + document.getElementById('btn').value);" >Domain: </button>
+    <input type="text" id="btn">
+     
+    <br>
+    <input type="checkbox" id="MyCheck"  onclick="verinbox()"> Verified account  
+    <br>
+    <br>
+    <!-- https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_textarea_form !-->
+
+    <textarea type="text" id="result" rows="8" cols="50"name="comment" form="Comment"></textarea>
+    <button onclick="CopyClip()">Copy</button>
+    <input type="button" value="Clear" onClick="window.location.reload()">
+    <br>
+    <button onclick="AtsLinks()">ATS</button>
+    <button onclick="LpLinks()">Leadpass</button>
+    <button onclick="Confluence()">Confluence</button>
+    <br>
+        <marquee direction="up" SCROLLDELAY=1000>
+            <img src="https://lh3.googleusercontent.com/-Yp5c9o0NU74/W-168vkqSFI/AAAAAAAAEnQ/FhYixtoCOlgSg8I1s3t7xOXr0Rjqng5SwCL0BGAYYCw/h276/leadpasses.gif" width="60" height="34.5"/> 
+        </marquee>
+    <br>
+    <span id="unhide"></span>
+    <!--<input type="button"  onclick="unhide(this, 'about') " value="Templates" span id="unhide">
+    <div id="about" class="hidden">-->
+        <div class="content3">
+            
+            <button onclick="SBplusMove()">SB+ Site Move</button>
+            <button onclick="ReActaccount()">Re-Act Account</button>
+            <button onclick="DomainTrans()">Domain Transfer</button>
+            <button onclick="GoogleHangOut()">Google Hangout</button>
+        <p></p>
+        </div>
+        </div>
+        <br>
+            
+    <div id="output"></div>
+    <footer>
+
+    </footer>
+    <div>
+        <script src="scripts/unhide.js"></script>
+        <script src="scripts/VERprocess.js"></script>
+        <script src="scripts/AtsLinks.js"></script>
+        <script src="scripts/LpLinks.js"></script>
+        <script src="scripts/DomWhoIs.js"></script>
+        <script src="scripts/DomainTrans.js"></script>
+        <script src="scripts/Confluence.js"></script>
+        <script src="scripts/verinbox.js"></script>
+        <script src="scripts/CopyClip.js"></script>
+        <script src="scripts/ClearText.js"></script>
+        <script src="scripts/SBplusMove.js"></script>
+        <script src="scripts/ReActaccount.js"></script>
+        <script src="scripts/DomWhoIs.js"></script>
+        <script src="scripts/GoogleHangOut.js"></script>
+    </div>
+
+</body>
+</html>
